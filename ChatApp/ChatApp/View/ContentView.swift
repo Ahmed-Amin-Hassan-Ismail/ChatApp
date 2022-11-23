@@ -28,6 +28,7 @@ struct ContentView: View {
             
             
             MessageFieldView()
+                .environmentObject(messagesManager)
         }
     }
 }

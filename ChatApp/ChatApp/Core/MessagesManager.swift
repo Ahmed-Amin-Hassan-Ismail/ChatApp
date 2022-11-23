@@ -13,6 +13,7 @@ import FirebaseFirestoreSwift
 final class MessagesManager: ObservableObject {
     @Published private(set) var messages = [Message]()
     private let database = Firestore.firestore()
+    private let collectionName = "messages"
     
     init() {
         getMessages()
@@ -20,7 +21,7 @@ final class MessagesManager: ObservableObject {
     
     
     func getMessages() {
-        database.collection ("messages").addSnapshotListener { querySnapshot, error in
+        database.collection(collectionName).addSnapshotListener { querySnapshot, error in
             
             guard let documents = querySnapshot?.documents else {
                 print("Error fetching documents...", String(describing: error))
@@ -37,6 +38,16 @@ final class MessagesManager: ObservableObject {
             })
             
             self.messages.sort { $0.timeStamp < $1.timeStamp}
+        }
+    }
+    
+    func sendMessage(text: String) {
+        let newMessage = Message(id: UUID().uuidString, text: text, received: false, timeStamp: Date())
+        
+        do {
+            try database.collection(collectionName).document().setData(from: newMessage)
+        } catch {
+            print("Error encoding document into messages \(error)")
         }
     }
 }
