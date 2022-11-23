@@ -19,6 +19,7 @@
 		ACFB29A5292E8788001E3E8D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACFB29A4292E8788001E3E8D /* GoogleService-Info.plist */; };
 		ACFB29A8292E8966001E3E8D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ACFB29A7292E8966001E3E8D /* FirebaseFirestore */; };
 		ACFB29AA292E8966001E3E8D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ACFB29A9292E8966001E3E8D /* FirebaseFirestoreSwift */; };
+		ACFB29AD292E8D58001E3E8D /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB29AC292E8D58001E3E8D /* MessagesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		ACFB29A0292E71FB001E3E8D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ACFB29A2292E76AA001E3E8D /* MessageFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFieldView.swift; sourceTree = "<group>"; };
 		ACFB29A4292E8788001E3E8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACFB29AC292E8D58001E3E8D /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				ACFB2987292E690E001E3E8D /* ChatAppApp.swift */,
 				ACFB299F292E71F0001E3E8D /* Extensions */,
+				ACFB29AB292E8D43001E3E8D /* Core */,
 				ACFB299A292E6CEA001E3E8D /* Model */,
 				ACFB2995292E6AAC001E3E8D /* View */,
 				ACFB298B292E690F001E3E8D /* Assets.xcassets */,
@@ -111,6 +114,14 @@
 				ACFB29A0292E71FB001E3E8D /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACFB29AB292E8D43001E3E8D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACFB29AC292E8D58001E3E8D /* MessagesManager.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 				ACFB29A3292E76AA001E3E8D /* MessageFieldView.swift in Sources */,
 				ACFB298A292E690E001E3E8D /* ContentView.swift in Sources */,
 				ACFB29A1292E71FB001E3E8D /* Extensions.swift in Sources */,
+				ACFB29AD292E8D58001E3E8D /* MessagesManager.swift in Sources */,
 				ACFB299C292E6CF3001E3E8D /* Message.swift in Sources */,
 				ACFB2988292E690E001E3E8D /* ChatAppApp.swift in Sources */,
 				ACFB2999292E6AD3001E3E8D /* TitleRowView.swift in Sources */,
