@@ -15,6 +15,7 @@
 		ACFB299C292E6CF3001E3E8D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB299B292E6CF3001E3E8D /* Message.swift */; };
 		ACFB299E292E6E91001E3E8D /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB299D292E6E91001E3E8D /* MessageBubbleView.swift */; };
 		ACFB29A1292E71FB001E3E8D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB29A0292E71FB001E3E8D /* Extensions.swift */; };
+		ACFB29A3292E76AA001E3E8D /* MessageFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB29A2292E76AA001E3E8D /* MessageFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		ACFB299B292E6CF3001E3E8D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		ACFB299D292E6E91001E3E8D /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
 		ACFB29A0292E71FB001E3E8D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ACFB29A2292E76AA001E3E8D /* MessageFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				ACFB2989292E690E001E3E8D /* ContentView.swift */,
 				ACFB2998292E6AD3001E3E8D /* TitleRowView.swift */,
 				ACFB299D292E6E91001E3E8D /* MessageBubbleView.swift */,
+				ACFB29A2292E76AA001E3E8D /* MessageFieldView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFB29A3292E76AA001E3E8D /* MessageFieldView.swift in Sources */,
 				ACFB298A292E690E001E3E8D /* ContentView.swift in Sources */,
 				ACFB29A1292E71FB001E3E8D /* Extensions.swift in Sources */,
 				ACFB299C292E6CF3001E3E8D /* Message.swift in Sources */,
