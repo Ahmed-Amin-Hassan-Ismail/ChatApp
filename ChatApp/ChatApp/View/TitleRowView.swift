@@ -14,7 +14,7 @@ struct TitleRowView: View {
             Image("username")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 50, height: 50)
+                .frame(width: 80, height: 80)
                 .cornerRadius(50)
             
             VStack(alignment: .leading) {
@@ -22,9 +22,12 @@ struct TitleRowView: View {
                     .font(.title)
                     .bold()
                 
-                Text("online")
-                    .font(.caption)
-                    .foregroundColor(.gray)
+                HStack(spacing: 3) {
+                    Image(systemName: "circle.fill")
+                    Text("online")
+                }
+                .font(.caption)
+                .foregroundColor(.green)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
