@@ -20,6 +20,8 @@
 		ACFB29A8292E8966001E3E8D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ACFB29A7292E8966001E3E8D /* FirebaseFirestore */; };
 		ACFB29AA292E8966001E3E8D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ACFB29A9292E8966001E3E8D /* FirebaseFirestoreSwift */; };
 		ACFB29AD292E8D58001E3E8D /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB29AC292E8D58001E3E8D /* MessagesManager.swift */; };
+		ACFB29AF292E9C8F001E3E8D /* EmptyMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB29AE292E9C8F001E3E8D /* EmptyMessagesView.swift */; };
+		ACFB29B2292E9D96001E3E8D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = ACFB29B1292E9D96001E3E8D /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,7 @@
 		ACFB29A2292E76AA001E3E8D /* MessageFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFieldView.swift; sourceTree = "<group>"; };
 		ACFB29A4292E8788001E3E8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACFB29AC292E8D58001E3E8D /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		ACFB29AE292E9C8F001E3E8D /* EmptyMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyMessagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 			files = (
 				ACFB29A8292E8966001E3E8D /* FirebaseFirestore in Frameworks */,
 				ACFB29AA292E8966001E3E8D /* FirebaseFirestoreSwift in Frameworks */,
+				ACFB29B2292E9D96001E3E8D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,7 @@
 				ACFB2989292E690E001E3E8D /* ContentView.swift */,
 				ACFB2998292E6AD3001E3E8D /* TitleRowView.swift */,
 				ACFB299D292E6E91001E3E8D /* MessageBubbleView.swift */,
+				ACFB29AE292E9C8F001E3E8D /* EmptyMessagesView.swift */,
 				ACFB29A2292E76AA001E3E8D /* MessageFieldView.swift */,
 			);
 			path = View;
@@ -143,6 +148,7 @@
 			packageProductDependencies = (
 				ACFB29A7292E8966001E3E8D /* FirebaseFirestore */,
 				ACFB29A9292E8966001E3E8D /* FirebaseFirestoreSwift */,
+				ACFB29B1292E9D96001E3E8D /* Lottie */,
 			);
 			productName = ChatApp;
 			productReference = ACFB2984292E690E001E3E8D /* ChatApp.app */;
@@ -174,6 +180,7 @@
 			mainGroup = ACFB297B292E690E001E3E8D;
 			packageReferences = (
 				ACFB29A6292E8966001E3E8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				ACFB29B0292E9D96001E3E8D /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = ACFB2985292E690E001E3E8D /* Products */;
 			projectDirPath = "";
@@ -207,6 +214,7 @@
 				ACFB29A1292E71FB001E3E8D /* Extensions.swift in Sources */,
 				ACFB29AD292E8D58001E3E8D /* MessagesManager.swift in Sources */,
 				ACFB299C292E6CF3001E3E8D /* Message.swift in Sources */,
+				ACFB29AF292E9C8F001E3E8D /* EmptyMessagesView.swift in Sources */,
 				ACFB2988292E690E001E3E8D /* ChatAppApp.swift in Sources */,
 				ACFB2999292E6AD3001E3E8D /* TitleRowView.swift in Sources */,
 				ACFB299E292E6E91001E3E8D /* MessageBubbleView.swift in Sources */,
@@ -420,6 +428,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		ACFB29B0292E9D96001E3E8D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -432,6 +448,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ACFB29A6292E8966001E3E8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		ACFB29B1292E9D96001E3E8D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACFB29B0292E9D96001E3E8D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
