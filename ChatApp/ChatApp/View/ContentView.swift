@@ -8,21 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    var messages: [String] = [
-        "Hello you",
-        "How are you doing?",
-        "I've been building SwiftUI application from scratch and it's so much fun"
-    ]
-    
-    
+   @StateObject private var messagesManager = MessagesManager()
+        
     var body: some View {
         VStack {
             VStack {
                 TitleRowView()
                 
                 ScrollView {
-                    ForEach(messages, id: \.self) { message in
-                        MessageBubbleView(message: Message(id: "12345", text: message, received: true, timeStamp: Date()))
+                    ForEach(messagesManager.messages) { message in
+                        MessageBubbleView(message: message)
                     }
                 }
                 .padding(.top, 10)

@@ -14,12 +14,16 @@ final class MessagesManager: ObservableObject {
     @Published private(set) var messages = [Message]()
     private let database = Firestore.firestore()
     
+    init() {
+        getMessages()
+    }
+    
     
     func getMessages() {
-        database.collection("messages").addSnapshotListener { querySnapshot, error in
-            guard let error else { return }
+        database.collection ("messages").addSnapshotListener { querySnapshot, error in
+            
             guard let documents = querySnapshot?.documents else {
-                print("Error fetching documents...", error)
+                print("Error fetching documents...", String(describing: error))
                 return
             }
             
@@ -31,7 +35,8 @@ final class MessagesManager: ObservableObject {
                     return nil
                 }
             })
+            
+            self.messages.sort { $0.timeStamp < $1.timeStamp}
         }
     }
-    
 }
