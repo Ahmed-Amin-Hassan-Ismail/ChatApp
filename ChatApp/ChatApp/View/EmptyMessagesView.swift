@@ -9,7 +9,8 @@ import SwiftUI
 
 struct EmptyMessagesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LottieView(lottieFile: "emptyMessage")
+           // .frame(width: 300, height: 300)
     }
 }
 

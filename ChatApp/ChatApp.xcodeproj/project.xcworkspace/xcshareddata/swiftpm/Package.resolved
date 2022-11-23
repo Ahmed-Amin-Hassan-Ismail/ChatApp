@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/airbnb/lottie-ios.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "51329d238e32dd492d19370e9a5da087987fec70"
+        "revision" : "8f81de8d81da8631fd95ff81a9db133b76e13ea4",
+        "version" : "3.1.6"
       }
     },
     {
