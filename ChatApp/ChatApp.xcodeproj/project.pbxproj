@@ -14,6 +14,7 @@
 		ACFB2999292E6AD3001E3E8D /* TitleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB2998292E6AD3001E3E8D /* TitleRowView.swift */; };
 		ACFB299C292E6CF3001E3E8D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB299B292E6CF3001E3E8D /* Message.swift */; };
 		ACFB299E292E6E91001E3E8D /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB299D292E6E91001E3E8D /* MessageBubbleView.swift */; };
+		ACFB29A1292E71FB001E3E8D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB29A0292E71FB001E3E8D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		ACFB2998292E6AD3001E3E8D /* TitleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRowView.swift; sourceTree = "<group>"; };
 		ACFB299B292E6CF3001E3E8D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		ACFB299D292E6E91001E3E8D /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		ACFB29A0292E71FB001E3E8D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				ACFB2987292E690E001E3E8D /* ChatAppApp.swift */,
+				ACFB299F292E71F0001E3E8D /* Extensions */,
 				ACFB299A292E6CEA001E3E8D /* Model */,
 				ACFB2995292E6AAC001E3E8D /* View */,
 				ACFB298B292E690F001E3E8D /* Assets.xcassets */,
@@ -90,6 +93,14 @@
 				ACFB299B292E6CF3001E3E8D /* Message.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		ACFB299F292E71F0001E3E8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACFB29A0292E71FB001E3E8D /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFB298A292E690E001E3E8D /* ContentView.swift in Sources */,
+				ACFB29A1292E71FB001E3E8D /* Extensions.swift in Sources */,
 				ACFB299C292E6CF3001E3E8D /* Message.swift in Sources */,
 				ACFB2988292E690E001E3E8D /* ChatAppApp.swift in Sources */,
 				ACFB2999292E6AD3001E3E8D /* TitleRowView.swift in Sources */,
